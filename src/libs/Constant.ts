@@ -1,0 +1,68 @@
+export const BASE_FILTERS = [
+  { f: 32, type: 'lowshelf', label: '32', value: 0 },
+  { f: 64, type: 'peaking', label: '64', value: 0 },
+  { f: 125, type: 'peaking', label: '125', value: 0 },
+  { f: 250, type: 'peaking', label: '250', value: 0 },
+  { f: 500, type: 'peaking', label: '500', value: 0 },
+  { f: 1000, type: 'peaking', label: '1k', value: 0 },
+  { f: 2000, type: 'peaking', label: '2k', value: 0 },
+  { f: 4000, type: 'peaking', label: '4k', value: 0 },
+  { f: 8000, type: 'peaking', label: '8k', value: 0 },
+  { f: 16000, type: 'highshelf', label: '16k', value: 0 },
+]
+
+export const PRESET_LIST = [
+  {
+    key: 'none',
+    name: 'Nessuno',
+    filters: BASE_FILTERS,
+  },
+  {
+    key: 'speak',
+    name: 'Parlato',
+    filters: [
+      { f: 32, type: 'lowshelf', label: '32', value: -15 },
+      { f: 64, type: 'peaking', label: '64', value: -3 },
+      { f: 125, type: 'peaking', label: '125', value: 0 },
+      { f: 250, type: 'peaking', label: '250', value: 2 },
+      { f: 500, type: 'peaking', label: '500', value: 16 },
+      { f: 1000, type: 'peaking', label: '1k', value: 20 },
+      { f: 2000, type: 'peaking', label: '2k', value: 20 },
+      { f: 4000, type: 'peaking', label: '4k', value: 18 },
+      { f: 8000, type: 'peaking', label: '8k', value: 10 },
+      { f: 16000, type: 'highshelf', label: '16k', value: 0 },
+    ],
+  },
+  {
+    key: 'voiceamp',
+    name: 'Amp. Voce',
+    filters: [
+      { f: 32, type: 'lowshelf', label: '32', value: -10 },
+      { f: 64, type: 'peaking', label: '64', value: -20 },
+      { f: 125, type: 'peaking', label: '125', value: -20 },
+      { f: 250, type: 'peaking', label: '250', value: 10 },
+      { f: 500, type: 'peaking', label: '500', value: 16 },
+      { f: 1000, type: 'peaking', label: '1k', value: 16 },
+      { f: 2000, type: 'peaking', label: '2k', value: 14 },
+      { f: 4000, type: 'peaking', label: '4k', value: 10 },
+      { f: 8000, type: 'peaking', label: '8k', value: 0 },
+      { f: 16000, type: 'highshelf', label: '16k', value: -10 },
+    ],
+  },
+  {
+    key: 'highamp',
+    name: 'Amp. Alti',
+    filters: [
+      { f: 32, type: 'lowshelf', label: '32', value: 0 },
+      { f: 64, type: 'peaking', label: '64', value: 0 },
+      { f: 125, type: 'peaking', label: '125', value: 0 },
+      { f: 250, type: 'peaking', label: '250', value: 0 },
+      { f: 500, type: 'peaking', label: '500', value: 0 },
+      { f: 1000, type: 'peaking', label: '1k', value: 5 },
+      { f: 2000, type: 'peaking', label: '2k', value: 10 },
+      { f: 4000, type: 'peaking', label: '4k', value: 12 },
+      { f: 8000, type: 'peaking', label: '8k', value: 15 },
+      { f: 16000, type: 'highshelf', label: '16k', value: 20 },
+    ],
+  },
+]
